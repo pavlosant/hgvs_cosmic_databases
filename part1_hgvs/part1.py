@@ -4,7 +4,9 @@ import csv
 #NM_152263.2:r.-115_775::NM_002609.3:r.1580_*1924
 
 class Fusion:
-
+    '''
+    Class to hold the structure of a fusion
+    '''
     def __init__(self,transcript1,location1,transcript2,location2):
         self.transcript1=transcript1
         self.location1=location1
@@ -16,11 +18,14 @@ class Fusion:
 
 
 def extract_genomic_coordinates(VEP_annotation_file):
+    """
+    Function to print the genomic coordinates of a mutaion from a VEP VCF annotation file
+    """
     with open(VEP_annotation_file, 'r') as csvfile:
         reader=csv.reader(csvfile, delimiter="\t")
 
         headers = next(reader)[:1]
-        #print(headers)
+        
         for row in reader:
             if row[0].startswith("#"):
                 continue
@@ -38,6 +43,10 @@ def extract_genomic_coordinates(VEP_annotation_file):
         
 
 def fusion_to_hgvs(annotation):
+    """
+    Function to create a Fusion object from the cosmic fusion format
+    and print the valid HGVS format
+    """
     transcript_pattern=re.compile('ENST(\d+)\.(\d+)\(')
     positions_pattern=re.compile('\:r.(\d+)_(\d+)(_*)')
     transcripts_list=[]
@@ -50,7 +59,7 @@ def fusion_to_hgvs(annotation):
     
     positions=positions_pattern.findall(annotation)
     for pos in positions:
-        #print(pos)
+       
         (pos1,pos2)=pos[0],pos[1]
         positions_list.append((pos1,pos2))
 
