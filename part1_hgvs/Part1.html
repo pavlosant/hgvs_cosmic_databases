@@ -14342,6 +14342,11 @@ a.anchor-link {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Case-1-results:">Case 1 results:<a class="anchor-link" href="#Case-1-results:">&#182;</a></h2>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14452,7 +14457,7 @@ We need to have the mutation in valid HGVS format.</p>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#INPUT for VEP</span>
@@ -14491,14 +14496,13 @@ We need to have the mutation in valid HGVS format.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We can then run VEP with the above input file. \
-<strong>input: input.txt \
-output: insertion.vcf</strong> \
-The command to run VEP for an HGVS mutation: \
-<strong>docker run -t -i -v $HOME/vep_data:/opt/vep/.vep ensemblorg/ensembl-vep
-./vep --cache  --force_overwrite --vcf  --input_file /opt/vep/.vep/input.txt  --output_file /opt/vep/.vep/insertion.vcf</strong> \</p>
-<p>\
-We can then extract the genomic coordinates from the VCF file. Based on the type of mutation(SNP,indel) we can calculate the end position of the mutation. (i.e if insertion we can add the length of the inserted sequence to the start position of the mutation)</p>
+<p>We can then run VEP with the above input file.</p>
+<p><strong>input: input.txt 
+output: insertion.vcf</strong> 
+The command to run VEP for an HGVS mutation:</p>
+<p><strong>docker run -t -i -v $HOME/vep_data:/opt/vep/.vep ensemblorg/ensembl-vep
+./vep --cache  --force_overwrite --vcf  --input_file /opt/vep/.vep/input.txt  --output_file /opt/vep/.vep/insertion.vcf</strong></p>
+<p>We can then extract the genomic coordinates from the VCF file. Based on the type of mutation(SNP,indel) we can calculate the end position of the mutation. (i.e if insertion we can add the length of the inserted sequence to the start position of the mutation)</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
