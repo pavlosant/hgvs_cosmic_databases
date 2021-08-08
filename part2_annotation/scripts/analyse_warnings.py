@@ -11,7 +11,8 @@ import argparse
 import re
 import csv
 
-DIAS_WARNING="DIAS_WARNING"
+
+DIAS_WARNING="DIAS_SYSTEM_ERROR"
 INPUT_WARNING="INPUT_WARNING"
 
 class Sample:

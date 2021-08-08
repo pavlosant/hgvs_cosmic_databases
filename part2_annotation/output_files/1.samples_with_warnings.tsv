@@ -3,7 +3,7 @@ Sample	Warning_Type_from_VEP_output	Warning_from_VEP_output
 
 2869929	INPUT_WARNING	WARNING: Length of reference allele (CC length 2) does not match co-ordinates 98218696-98218696 on line 149
 
-1090880	DIAS_WARNING	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
+1090880	DIAS_SYSTEM_ERROR	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
 
 	Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation(Sanger::Cosmic::Dias::GenomeFormatter=HASH(0x5a41a58)) called at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 209
 
@@ -183,7 +183,7 @@ WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass t
 
 1201903	INPUT_WARNING	WARNING: Length of reference allele (GGAGGA length 6) does not match co-ordinates 170837553-170837557 on line 1
 
-755421	DIAS_WARNING	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
+755421	DIAS_SYSTEM_ERROR	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
 
 	Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation(Sanger::Cosmic::Dias::GenomeFormatter=HASH(0x5b18fb8)) called at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 209
 
@@ -269,7 +269,7 @@ WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass t
 
 2824110	INPUT_WARNING	WARNING: Length of reference allele (AT length 2) does not match co-ordinates 128841502-128841508 on line 95
 
-1076116	DIAS_WARNING	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
+1076116	DIAS_SYSTEM_ERROR	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
 
 	Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation(Sanger::Cosmic::Dias::GenomeFormatter=HASH(0x714cb28)) called at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 209
 
@@ -325,7 +325,7 @@ WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass t
 
 	Bio::EnsEMBL::VEP::Runner::run(Bio::EnsEMBL::VEP::Runner=HASH(0x51cf310)) called at /software/cosmic/projects/ensembl-vep/vep line 224
 
-1196425	DIAS_WARNING	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
+1196425	DIAS_SYSTEM_ERROR	WARNING: Plugin 'DIAS' went wrong: Attribute (ens_hgvs_notation) does not pass the type constraint because: Validation failed for 'HashRef' with value undef at reader Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation (defined at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 23) line 15, <__ANONIO__> line 1.
 
 	Sanger::Cosmic::Dias::GenomeFormatter::ens_hgvs_notation(Sanger::Cosmic::Dias::GenomeFormatter=HASH(0x4f93438)) called at /nfs/users/nfs_d/data-cosmic/pipeline/dias_annotate/lib//Sanger/Cosmic/Dias/GenomeFormatter.pm line 209
 
