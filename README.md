@@ -77,7 +77,7 @@ contains the SampleIds, the warning type and warning text for each warning of th
 
 A snippet of the output file follows below:
 
-```csv
+```tsv
 Sample	Warning_Type_from_VEP_output	Warning_from_VEP_output
 2910234	INPUT_WARNING	WARNING: Length of reference allele (TCAGA length 5) does not match co-ordinates 29447409-29447421 on line 1
 
