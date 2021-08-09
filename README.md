@@ -34,17 +34,16 @@ line_number: The line number as recorded in the input warning message (INPUT_WAR
 
 ## How to run 
 ### Input parameters 
-The input is the path to the folder `vep_output_sample_*`
-
+The input is the path to the folder `vep_output_sample_*` and 
 the path to the `dias_extract_sample_*` folder. 
 
 Some default values related to the location in script are provided within the script ("part2_annotation/grch37_vep_output_sample_126" and "part2_annotation/grch37_dias_extract_sample_126") 
 ### Output parameters
-The output of the script is two tsv files. 
+The output of the script consists of two tsv files. 
 The user can define the name and path of this output files. 
 The default values are "part2_annotation/output_files/1.samples_with_warnings.tsv" and "part2_annotation/output_files/2.samples_with_input_warnings_and_dias_extracted_lines.tsv"
 ### Execution
-`
+```bash
 python3 part2_annotation/scripts/analyse_warnings.py  --help
 usage: analyse_warnings.py [-h] [--vep_folder VEP_FOLDER]
                            [--dias_folder DIAS_FOLDER]
@@ -68,4 +67,5 @@ Output parameters:
                         Full path of file to write the samples with INPUT_type
                         warnings and the line from the dias_extract files that
                         corresponds to the warning
-`
+
+```
