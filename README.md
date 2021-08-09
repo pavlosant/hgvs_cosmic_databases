@@ -73,7 +73,7 @@ Output parameters:
 ## Output files
 ### Output file 1 (1.samples_with_warnings.tsv)
 The first tsv file (part2_annotation/output_files/1.samples_with_warnings.tsv)
-contains the SampleIds, the warning type and warning text for each warning of the sample.
+contains the SampleId of each sample followed by the warning type and warning text for each warning of the sample.
 
 A snippet of the output file follows below:
 
@@ -90,7 +90,13 @@ Sample	Warning_Type_from_VEP_output	Warning_from_VEP_output
 
 ### ### Output file 2 (2.samples_with_input_warnings_and_dias_extracted_lines.tsv)
 
-The second output tsv file (part2_annotation/output_files/2.samples_with_input_warnings_and_dias_extracted_lines.tsv) contains the information 
+The second output tsv file (part2_annotation/output_files/2.samples_with_input_warnings_and_dias_extracted_lines.tsv) contains the following information 
+
+Sample: Sample ID \
+Warning_from_VEP_output: The warning text from the warning file for this sample
+Corresponding_Line_from_Dias_extract_file: The line from the samples's dias_extract_file that corresponds to the warning for this sample \
+Vep_output_warning_file: The location of the vep_outout_file for this sample
+Dias_extract_file: The location of the dias_extract_file for this sample
 
 
 ```tsv
