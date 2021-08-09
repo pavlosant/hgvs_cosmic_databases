@@ -15,12 +15,12 @@ Methods to create valid HCVS compliant mutation definitions.
 # Annotation warnings from vep output
 ## Classes
 I created two classes to help me analyze the folders with the files containing the vep_annotations and dias_extracts. 
-Class Sample and class Warning.
+
 ![alt text](https://github.com/pavlos-pa10/hgvs_cosmic_databases/blob/main/part2_annotation/img/classes_cosmic_annotation.png?raw=true)
 ### Class Sample: 
-sampleID : the sampleID take from the filename
-vep_out_path: path to the file from the vep_output_sample_* relating to this sample
-dias_path: path to the file from the dias_extract_sample_126
+sampleID : the sampleID take from the filename \
+vep_out_path: path to the file from the vep_output_sample_* relating to this sample \
+dias_path: path to the file from the dias_extract_sample_126 \
 
 ### Class Warning
 This class holds the information for all the warnings of each sample. Each sample can have zero or many warnings. 
