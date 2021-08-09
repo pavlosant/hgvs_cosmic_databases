@@ -128,31 +128,43 @@ def match_line(filename,start,stop):
                 return ("\t".join(row))
                 
 
-def main(args):
-    sample_list=[]
-    p=Path(args.vep_folder)
-    
+
+def part1_analysis(vep_folder, outfolder):
+    smple_list=[]
+    p=Path(vep_folder)
     #Get all warning file names
     warning_files=list(p.glob('*_warnings.txt'))
-    for p in warning_files:
-        # Extract sample name from filename
+    sample_list=get_sample_information_from_vep_files(warning_files)
+    part1_print_to_file(outfolder, sample_list)
+
+def get_sample_information_from_vep_files(warning_files_list):
+    sample_list=[]
+    for p in warning_files_list:
+        #Extract sample name from filename
         sample=extract_sample_name(p)
-        #Create a nee object of class Sample
+        #Create a new object of class Sample
         s=Sample(sampleID=sample)
         s.vep_out_path=p
         #Get all warnings related to sample s and save them to object s
         s.warnings=extract_warnings(p)
         #add sample to the global sample list to use later
         sample_list.append(s)
+    return sample_list
 
-    with open(args.warnings_output_file1,'w') as outf:
+def part1_print_to_file(output_file, samples):
+    with open(output_file,'w') as outf:
         outf.write("Sample\tWarning_Type_from_VEP_output\tWarning_from_VEP_output\n")
+        for s in samples:
+            for w in s.warnings:
+                outf.write(f"{s.sampleID}\t{w.warning_type}\t{w.warning}\n")
 
-        for s1 in sample_list:
-           
-            for w in s1.warnings:
-                outf.write(f"{s1.sampleID}\t{w.warning_type}\t{w.warning}\n")
 
+def main(args):
+    sample_list=[]
+    part1_analysis(args.vep_folder, args.warnings_output_file1)
+    
+
+    
     '''
     Part 2
     '''
