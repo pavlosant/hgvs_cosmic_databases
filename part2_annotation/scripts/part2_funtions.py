@@ -67,7 +67,6 @@ def match_line(filename, start, stop):
     """
     with open(filename, "r") as csvfile:
         reader = csv.reader(csvfile, delimiter="\t")
-        # headers = next(reader)[1:]
         for row in reader:
             if row[1] == start and row[2] == stop:
                 return "\t".join(row)
